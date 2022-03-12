@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       password: password
     };
 
-    this.http.post('http://localhost:3000/users/login', reqObject, { headers: headers }).subscribe(
+    this.http.post('http://localhost:3000/api/users/login', reqObject, { headers: headers }).subscribe(
       
       // The response data
       (response) => {
